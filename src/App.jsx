@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import Merch from "./pages/Merch";
+import icerose from "./assets/iceRoseLogo.avif";
 
 function App() {
   return (
@@ -25,6 +26,13 @@ function App() {
         }}
       >
         © 2026 SYCEL ESPORTS CLUB
+        <a
+          href="https://iceroseclothes.com/"
+          className="ice-rose-link"
+          target="_blank"
+        >
+          <img src={icerose} alt="Ice Rose Merch" />
+        </a>
       </footer>
     </div>
   );

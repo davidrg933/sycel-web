@@ -22,3 +22,11 @@ body {
   font-family: "Orbitron", sans-serif;
   line-height: 1.6;
 }
+
+.ice-rose-link img {
+  width: 160px;
+  height: 33px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
