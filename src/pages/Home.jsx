@@ -3,7 +3,7 @@ import logo from "../assets/logoSycel.png";
 import CreatorCard from "../components/ui/CreatorCard";
 import rinna from "../assets/rinna.jpeg";
 import quique from "../assets/quique.png";
-import dani from "../assets/dani.jpg";
+import dani from "../assets/dani.jpeg";
 import vgc from "../assets/pokemonVGC.png";
 import inazuma from "../assets/inazuma.png";
 
