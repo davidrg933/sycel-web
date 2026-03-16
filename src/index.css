@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+@import "./components/layout/Navbar.css";
+@import "./pages/Home.css";
+@import "./components/ui/CreatorCard.css";
+
+:root {
+  --sycel-gold: #c5a059;
+  --sycel-silver: #b0b0b0;
+  --sycel-black: #000000;
+  --card-bg: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--sycel-black);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.6;
+}

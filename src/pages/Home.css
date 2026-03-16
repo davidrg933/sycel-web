@@ -1,0 +1,114 @@
+main {
+  margin-bottom: 2vh;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: var(--sycel-gold);
+  filter: blur(150px);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.hero-logo-large {
+  width: 320px;
+  filter: drop-shadow(0 0 30px rgba(197, 160, 89, 0.3));
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+.hero-title span {
+  color: var(--sycel-gold);
+}
+
+.hero-subtitle {
+  color: var(--sycel-silver);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* SECCIÓN JUEGOS */
+
+.game-section {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+}
+
+.game-content {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.game-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.game-tag {
+  color: var(--sycel-gold);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.game-title {
+  font-size: 3.5rem;
+  margin: 10px 0 20px;
+  font-weight: 900;
+}
+
+.game-description {
+  color: var(--sycel-silver);
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.game-image img {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gold {
+  color: var(--sycel-gold);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--sycel-gold);
+  color: var(--sycel-gold);
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--sycel-gold);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
+}
