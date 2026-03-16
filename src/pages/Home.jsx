@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logoSycel.png";
 import CreatorCard from "../components/ui/CreatorCard";
 import rinna from "../assets/rinna.jpeg";
+import quique from "../assets/quique.png";
 import vgc from "../assets/pokemonVGC.png";
 import inazuma from "../assets/inazuma.png";
 
@@ -34,7 +35,7 @@ const Home = () => {
           <CreatorCard
             name="Quiquevita"
             role="Fundador & Creador"
-            image="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070"
+            image={quique}
             link="https://www.twitch.tv/quiquevita"
           />
           <CreatorCard
