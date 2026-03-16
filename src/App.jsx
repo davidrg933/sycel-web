@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import Merch from "./pages/Merch";
-import icerose from "./assets/iceRoseLogo.avif";
+import icerose from "./assets/iceroseLogo.avif";
 
 function App() {
   return (
