@@ -3,6 +3,7 @@ import logo from "../assets/logoSycel.png";
 import CreatorCard from "../components/ui/CreatorCard";
 import rinna from "../assets/rinna.jpeg";
 import quique from "../assets/quique.png";
+import dani from "../assets/dani.jpg";
 import vgc from "../assets/pokemonVGC.png";
 import inazuma from "../assets/inazuma.png";
 
@@ -43,6 +44,12 @@ const Home = () => {
             role="Creadora de Contenido"
             image={rinna}
             link="https://www.twitch.tv/rinna0w"
+          />
+          <CreatorCard
+            name="Danislup0"
+            role="Creador de Contenido"
+            image={dani}
+            link="https://www.twitch.tv/danislup0"
           />
         </div>
       </section>
