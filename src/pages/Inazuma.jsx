@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import logo from "../assets/logoSycel.png";
 import "./Inazuma.css";
-import dani from "../assets/dani.jpeg";
+import dani from "../assets/daniInazuma.png";
 import daystar from "../assets/daystar.png";
-import kataInazuma from "../assets/katawanInazuma.jpg";
+import hospitalet from "../assets/hospitalet.png";
+import katawanInazuma from "../assets/katawanInazuma.png";
+import dickson from "../assets/dickson.png";
+import blasco from "../assets/blasco.png";
 import top01 from "../assets/01-top-hospi.png";
 import PlayerCard from "../components/ui/PlayerCard";
 
@@ -34,12 +37,12 @@ const Inazuma = () => {
       <main className="inazuma-body">
         {activeTab === "roster" && (
           <div className="roster-layout fade-in">
-            <PlayerCard name="Katawan" role="Capitán" image={kataInazuma} />
+            <PlayerCard name="Katawan" role="Capitán" image={katawanInazuma} />
             <PlayerCard name="Dani" role="Player" image={dani} />
             <PlayerCard name="Daystar" role="Player" image={daystar} />
-            <PlayerCard name="Hospitalet" role="Player" image={kataInazuma} />
-            <PlayerCard name="Blasco" role="Player" image={kataInazuma} />
-            <PlayerCard name="Dickson" role="Player" image={kataInazuma} />
+            <PlayerCard name="Hospitalet" role="Player" image={hospitalet} />
+            <PlayerCard name="Blasco" role="Player" image={blasco} />
+            <PlayerCard name="Dickson" role="Player" image={dickson} />
           </div>
         )}
 

@@ -6,7 +6,7 @@ import kataPokemon from "../assets/katawanPokemon.png";
 import jonubieta from "../assets/jonubieta.png";
 import grim from "../assets/grim.png";
 import mofleti from "../assets/mofleti.png";
-import pazos from "../assets/pabloPazos.png";
+import pazos from "../assets/pazos.png";
 import PlayerCard from "../components/ui/PlayerCard";
 
 const Pokemon = () => {
@@ -36,7 +36,7 @@ const Pokemon = () => {
       <main className="pokemon-body">
         {activeTab === "roster" && (
           <div className="roster-layout fade-in">
-            <PlayerCard name="PabloPazos" role="Capitán" image={pazos} />
+            <PlayerCard name="Pablo Pazos" role="Capitán" image={pazos} />
             <PlayerCard name="Katawan" role="Player" image={kataPokemon} />
             <PlayerCard name="Jon Ubieta" role="Player" image={jonubieta} />
             <PlayerCard name="Grim" role="Player" image={grim} />
