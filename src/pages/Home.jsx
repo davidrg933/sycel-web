@@ -6,6 +6,7 @@ import quique from "../assets/quique.png";
 import dani from "../assets/dani.jpeg";
 import vgc from "../assets/pokemonVGC.png";
 import inazuma from "../assets/inazuma.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -65,7 +66,9 @@ const Home = () => {
               Reviviendo la esencia del Victory Road. Formamos a los mejores
               estrategas para dominar el campo de juego.
             </p>
-            <button className="btn-secondary">VER MÁS</button>
+            <Link to="/inazuma" className="btn-secondary">
+              VER MÁS
+            </Link>
           </div>
           <div className="game-image">
             <img src={inazuma} alt="Inazuma Eleven" className="inazuma-image" />
@@ -86,7 +89,9 @@ const Home = () => {
               Desde el team building hasta el top cut. Analizamos el meta para
               que nuestros entrenadores alcancen la gloria.
             </p>
-            <button className="btn-secondary">VER MÁS</button>
+            <Link to="/pokemon" className="btn-secondary">
+              VER MÁS
+            </Link>
           </div>
           <div className="game-image">
             <img src={vgc} alt="Pokémon VGC" className="pokemon-image" />

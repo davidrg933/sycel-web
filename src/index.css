@@ -2,6 +2,9 @@
 @import "./components/layout/Navbar.css";
 @import "./pages/Home.css";
 @import "./components/ui/CreatorCard.css";
+@import "./pages/Inazuma.css";
+@import "./pages/Pokemon.css";
+@import "./pages/Merch.css";
 
 :root {
   --sycel-gold: #c5a059;

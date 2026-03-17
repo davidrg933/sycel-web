@@ -104,6 +104,7 @@ main {
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -111,4 +112,5 @@ main {
   color: #000;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
+  text-decoration: none;
 }

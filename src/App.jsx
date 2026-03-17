@@ -3,7 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import Merch from "./pages/Merch";
+import Pokemon from "./pages/Pokemon";
 import icerose from "./assets/iceroseLogo.avif";
+import Inazuma from "./pages/Inazuma";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/merch" element={<Merch />} />
+        <Route path="/pokemon" element={<Pokemon />} />
+        <Route path="/inazuma" element={<Inazuma />} />
       </Routes>
 
       <footer
