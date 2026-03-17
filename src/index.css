@@ -5,6 +5,7 @@
 @import "./pages/Inazuma.css";
 @import "./pages/Pokemon.css";
 @import "./pages/Merch.css";
+@import "./components/ui/PlayerCard.css";
 
 :root {
   --sycel-gold: #c5a059;

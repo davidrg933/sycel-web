@@ -2,49 +2,13 @@ import React, { useState } from "react";
 import logo from "../assets/logoSycel.png";
 import "./Inazuma.css";
 import dani from "../assets/dani.jpeg";
+import daystar from "../assets/daystar.png";
+import kataInazuma from "../assets/katawanInazuma.jpg";
 import top01 from "../assets/01-top-hospi.png";
+import PlayerCard from "../components/ui/PlayerCard";
 
 const Inazuma = () => {
   const [activeTab, setActiveTab] = useState("roster");
-
-  const players = [
-    {
-      id: 1,
-      name: "KATAWAN",
-      role: "CAPITÁN",
-      img: dani,
-    },
-    {
-      id: 2,
-      name: "HOSPITALET",
-      role: "PLAYER",
-      img: dani,
-    },
-    {
-      id: 3,
-      name: "BLASC0",
-      role: "PLAYER",
-      img: dani,
-    },
-    {
-      id: 4,
-      name: "DICKSON",
-      role: "PLAYER",
-      img: dani,
-    },
-    {
-      id: 5,
-      name: "DAYSTAR",
-      role: "PLAYER",
-      img: dani,
-    },
-    {
-      id: 6,
-      name: "DANISLUP0",
-      role: "PLAYER",
-      img: dani,
-    },
-  ];
 
   return (
     <div className="inazuma-page">
@@ -70,56 +34,17 @@ const Inazuma = () => {
       <main className="inazuma-body">
         {activeTab === "roster" && (
           <div className="roster-layout fade-in">
-            {players.map((player) => (
-              <div key={player.id} className="player-card-clean">
-                <div className="player-image-box">
-                  <img src={player.img} alt={player.name} />
-                  <span className="player-role-badge">{player.role}</span>
-                </div>
-                <div className="player-name-box">
-                  <h3>{player.name}</h3>
-                </div>
-              </div>
-            ))}
+            <PlayerCard name="Katawan" role="Capitán" image={kataInazuma} />
+            <PlayerCard name="Dani" role="Player" image={dani} />
+            <PlayerCard name="Daystar" role="Player" image={daystar} />
+            <PlayerCard name="Hospitalet" role="Player" image={kataInazuma} />
+            <PlayerCard name="Blasco" role="Player" image={kataInazuma} />
+            <PlayerCard name="Dickson" role="Player" image={kataInazuma} />
           </div>
         )}
 
         {activeTab === "tops" && (
           <div className="tops-layout fade-in">
-            <div className="tournament-card">
-              <div className="tournament-info">
-                <span className="tournament-tag">FINAL PHASE</span>
-                <h3>SPANISH LEAGUE</h3>
-                <p>
-                  Resultados oficiales de la fase final de la spanish league.
-                </p>
-              </div>
-
-              <div className="tournament-image-container">
-                <img
-                  src={top01}
-                  alt="Spanish League Final Phase"
-                  className="tournament-img"
-                />
-              </div>
-            </div>
-            <div className="tournament-card">
-              <div className="tournament-info">
-                <span className="tournament-tag">FINAL PHASE</span>
-                <h3>SPANISH LEAGUE</h3>
-                <p>
-                  Resultados oficiales de la fase final de la spanish league.
-                </p>
-              </div>
-
-              <div className="tournament-image-container">
-                <img
-                  src={top01}
-                  alt="Spanish League Final Phase"
-                  className="tournament-img"
-                />
-              </div>
-            </div>
             <div className="tournament-card">
               <div className="tournament-info">
                 <span className="tournament-tag">FINAL PHASE</span>

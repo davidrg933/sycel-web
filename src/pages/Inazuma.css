@@ -40,7 +40,7 @@
 /* Grid del Roster */
 .roster-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 5vw;
   max-width: 1100px;
   margin: 50px auto;

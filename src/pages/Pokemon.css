@@ -1,47 +1,115 @@
-.hero-title-container {
+.pokemon-page {
+  background-color: #000;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 50px 20px;
+}
+
+/* Control del logo para que no se coma la pantalla */
+.pokemon-main-logo {
+  max-width: 150px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.pokemon-nav-tabs {
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin: 20px 0;
 }
 
-.hero-image {
-  display: flex;
-  justify-content: center;
-  margin-top: 13vh;
-}
-.hero-logo {
-  margin: auto;
-  width: 120px;
-  filter: drop-shadow(0 0 30px rgba(197, 160, 89, 0.3));
-}
-
-.tab-title {
+.pokemon-tab {
   font-size: 3rem;
   font-weight: 900;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.2); /* Apagado por defecto */
-  transition: all 0.4s ease;
+  margin: 0;
+  transition: all 0.3s ease;
+  color: #222; /* Casi invisible cuando no está activo */
   letter-spacing: -2px;
 }
 
-.tab-title:hover {
-  color: white;
+.pokemon-tab.is-active {
+  color: #c5a059;
+  text-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
 }
 
-.tab-title.active {
-  color: var(--sycel-gold); /* El dorado que ya usas */
-  text-shadow: 0 0 20px rgba(197, 160, 89, 0.5);
+/* Grid del Roster */
+.roster-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 5vw;
+  max-width: 1100px;
+  margin: 50px auto;
 }
 
-/* Animación de entrada */
+.player-card-clean {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.player-card-clean:hover {
+  transform: translateY(-10px);
+  border-color: #c5a059;
+}
+
+.player-image-box {
+  aspect-ratio: 1/1;
+  position: relative;
+  background: #111;
+}
+
+.player-image-box img {
+  filter: grayscale(1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.player-card-clean:hover .player-image-box img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+}
+
+.player-role-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #c5a059;
+  color: #000;
+  font-size: 0.6rem;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.player-name-box {
+  padding: 20px;
+  background: #0a0a0a;
+}
+
+.player-name-box h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Animación de entrada suave */
 .fade-in {
-  animation: fadeIn 0.5s ease forwards;
-  padding: 40px 20px;
-  text-align: center;
+  animation: fadeInAnim 0.8s ease forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInAnim {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -50,4 +118,70 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Contenedor de la sección TOPS */
+.tops-layout {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  margin-bottom: 10vh;
+}
+
+.tournament-card {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  transition: border-color 0.3s ease;
+}
+
+.tournament-card:hover {
+  border-color: #c5a059;
+}
+
+.tournament-info {
+  padding: 30px;
+  text-align: left;
+}
+
+.tournament-tag {
+  color: #c5a059;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  border: 1px solid #c5a059;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.tournament-info h3 {
+  font-size: 2rem;
+  margin: 15px 0 5px 0;
+  letter-spacing: -1px;
+}
+
+.tournament-info p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Imagen del torneo */
+.tournament-image-container {
+  width: 100%;
+  border-top: 1px solid #1a1a1a;
+  line-height: 0; /* Evita espacios extra debajo de la imagen */
+}
+
+.tournament-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Un ligero brillo al pasar el ratón para que parezca interactiva */
+  transition: filter 0.3s ease;
+}
+
+.tournament-card:hover .tournament-img {
+  filter: brightness(1.1);
 }
