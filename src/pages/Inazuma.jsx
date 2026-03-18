@@ -38,7 +38,7 @@ const Inazuma = () => {
         {activeTab === "roster" && (
           <div className="roster-layout fade-in">
             <PlayerCard name="Katawan" role="Capitán" image={katawanInazuma} />
-            <PlayerCard name="Dani" role="Player" image={dani} />
+            <PlayerCard name="Danislup0" role="Player" image={dani} />
             <PlayerCard name="Daystar" role="Player" image={daystar} />
             <PlayerCard name="Hospitalet" role="Player" image={hospitalet} />
             <PlayerCard name="Blasco" role="Player" image={blasco} />
