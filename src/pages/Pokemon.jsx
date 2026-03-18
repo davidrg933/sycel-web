@@ -39,7 +39,7 @@ const Pokemon = () => {
             <PlayerCard name="Pablo Pazos" role="Capitán" image={pazos} />
             <PlayerCard name="Katawan" role="Player" image={kataPokemon} />
             <PlayerCard name="Jon Ubieta" role="Player" image={jonubieta} />
-            <PlayerCard name="Grim" role="Player" image={grim} />
+            <PlayerCard name="Grimmblack" role="Player" image={grim} />
             <PlayerCard name="Quiquevita" role="Player" image={quiquePokemon} />
             <PlayerCard name="Mofleti" role="Player" image={mofleti} />
           </div>
