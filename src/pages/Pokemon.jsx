@@ -7,6 +7,9 @@ import jonubieta from "../assets/jonubieta.png";
 import grim from "../assets/grim.png";
 import mofleti from "../assets/mofleti.png";
 import pazos from "../assets/pazos.png";
+import agustin from "../assets/agustin.png";
+import miniPak from "../assets/miniPak.png";
+import levi from "../assets/levi.png";
 import PlayerCard from "../components/ui/PlayerCard";
 
 const Pokemon = () => {
@@ -42,6 +45,9 @@ const Pokemon = () => {
             <PlayerCard name="Grimmblack" role="Player" image={grim} />
             <PlayerCard name="Quiquevita" role="Player" image={quiquePokemon} />
             <PlayerCard name="Mofleti" role="Player" image={mofleti} />
+            <PlayerCard name="Agustin" role="Player" image={agustin} />
+            {/* <PlayerCard name="MiniPak" role="Player" image={miniPak} /> */}
+            {/* <PlayerCard name="Levi" role="Player" image={levi} /> */}
           </div>
         )}
 
