@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sycel-web.vercel.app/sitemap.xml
