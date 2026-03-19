@@ -6,11 +6,12 @@ import Merch from "./pages/Merch";
 import Pokemon from "./pages/Pokemon";
 import icerose from "./assets/iceroseLogo.avif";
 import Inazuma from "./pages/Inazuma";
-
+import { Analytics } from "@vercel/analytics/next";
 function App() {
   return (
     <div className="app-container">
       <Navbar />
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/merch" element={<Merch />} />
