@@ -185,3 +185,34 @@
 .tournament-card:hover .tournament-img {
   filter: brightness(1.1);
 }
+@media (max-width: 600px) {
+  .pokemon-page {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .pokemon-nav-tabs {
+    gap: 20px;
+  }
+
+  .pokemon-tab {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+  }
+
+  .roster-layout {
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .player-card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .tops-layout {
+    margin: 5vw;
+    margin-bottom: 10vw;
+    width: 500px;
+  }
+}

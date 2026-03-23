@@ -114,3 +114,25 @@ main {
   box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .game-section {
+    padding: 5vw 10vw;
+    height: auto;
+    margin-bottom: 20vw;
+  }
+
+  .game-content {
+    text-align: center;
+  }
+
+  .game-title {
+    font-size: 2.2rem; /* Títulos menos gigantes */
+    letter-spacing: 5px;
+  }
+
+  /* Si tienes imágenes que flotan al lado, ponlas debajo */
+  .game-image {
+    display: none;
+  }
+}
