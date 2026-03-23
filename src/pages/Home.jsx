@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main>
       {/* SECCIÓN HERO */}
-      <section className="hero">
+      <section className="hero" id="inicio">
         <div className="hero-glow"></div>
 
         <img src={logo} className="hero-logo-large" alt="Sycel Club" />

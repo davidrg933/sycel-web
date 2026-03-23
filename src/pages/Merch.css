@@ -136,3 +136,37 @@
   font-size: 0.7rem;
   letter-spacing: 3px;
 }
+
+@media (max-width: 600px) {
+  .merch-title {
+    font-size: 1.8rem;
+  }
+
+  .merch-divider {
+    margin-bottom: 30px;
+  }
+
+  .product-info {
+    padding: 15px;
+  }
+
+  .product-name {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+
+  .product-card {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+  .product-image-wrapper {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+  .product-image-wrapper img {
+    max-width: 60vw;
+  }
+}
