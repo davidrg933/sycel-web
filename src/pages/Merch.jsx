@@ -1,17 +1,71 @@
 import React from "react";
+import logo from "../assets/logoSycel.png";
+import "./Merch.css";
+import equipacion from "../assets/sycelEquipacion.png";
 
 const Merch = () => {
+  const products = [
+    {
+      id: 1,
+      name: "??????????",
+      price: "???€",
+      status: "PRÓXIMAMENTE",
+      img: equipacion,
+    },
+    {
+      id: 2,
+      name: "??????????",
+      price: "???€",
+      status: "PRÓXIMAMENTE",
+      img: equipacion,
+    },
+    {
+      id: 3,
+      name: "??????????",
+      price: "???€",
+      status: "PRÓXIMAMENTE",
+      img: equipacion,
+    },
+  ];
+
   return (
-    <div style={{ paddingTop: "120px", textAlign: "center" }}>
-      <h1 style={{ fontSize: "3rem", color: "var(--sycel-gold)" }}>
-        MERCHANDISING
-      </h1>
-      <p style={{ marginTop: "20px", color: "var(--sycel-silver)" }}>
-        Estamos preparando una línea exclusiva de camisetas para nuestros fans.
-        Pronto podrás lucir los colores de SYCEL con orgullo. <br />
-        ¡Mantente atento a nuestras redes para el lanzamiento!
-      </p>
-      {/* Aquí irá la galería de camisetas más adelante */}
+    <div className="merch-page">
+      <header className="merch-header">
+        <img src={logo} alt="Sycel Logo" className="merch-logo-small" />
+        <h1 className="merch-title">TIENDA OFICIAL SYCEL</h1>
+        <div className="merch-divider"></div>
+      </header>
+
+      <main className="merch-container">
+        <div className="merch-grid">
+          {products.map((product) => (
+            <div key={product.id} className="product-card">
+              <div className="product-image-wrapper">
+                <img src={product.img} alt={product.name} />
+                {product.status !== "DISPONIBLE" && (
+                  <div className="product-overlay">
+                    <span>{product.status}</span>
+                  </div>
+                )}
+              </div>
+              <div className="product-info">
+                <h3 className="product-name">{product.name}</h3>
+                <p className="product-price">{product.price}</p>
+                <button
+                  className={`buy-button ${product.status !== "DISPONIBLE" ? "disabled" : ""}`}
+                  disabled={product.status !== "DISPONIBLE"}
+                >
+                  {(product.status = "COMPRAR")}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      <footer className="merch-footer">
+        <p>ENVÍOS A TODA ESPAÑA · SYCEL ESPORTS CLUB</p>
+      </footer>
     </div>
   );
 };

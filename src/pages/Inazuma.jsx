@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TournamentCard from "../components/ui/TournamentCard";
 import logo from "../assets/logoSycel.png";
 import "./Inazuma.css";
 import dani from "../assets/daniInazuma.png";
@@ -7,7 +8,9 @@ import hospitalet from "../assets/hospitalet.png";
 import katawanInazuma from "../assets/katawanInazuma.png";
 import dickson from "../assets/dickson.png";
 import blasco from "../assets/blasco.png";
-import top01 from "../assets/01-top-hospi.png";
+import top01 from "../assets/topsInazuma/01top.png";
+import top02 from "../assets/topsInazuma/02top.png";
+import top03 from "../assets/topsInazuma/03top.jpg";
 import PlayerCard from "../components/ui/PlayerCard";
 
 const Inazuma = () => {
@@ -48,23 +51,24 @@ const Inazuma = () => {
 
         {activeTab === "tops" && (
           <div className="tops-layout fade-in">
-            <div className="tournament-card">
-              <div className="tournament-info">
-                <span className="tournament-tag">FINAL PHASE</span>
-                <h3>SPANISH LEAGUE</h3>
-                <p>
-                  Resultados oficiales de la fase final de la spanish league.
-                </p>
-              </div>
-
-              <div className="tournament-image-container">
-                <img
-                  src={top01}
-                  alt="Spanish League Final Phase"
-                  className="tournament-img"
-                />
-              </div>
-            </div>
+            <TournamentCard
+              tag="Hospitalet"
+              title="SPANISH LEAGUE FINAL PHASE"
+              description="Resultados oficiales de la fase final de la spanish league."
+              image={top01}
+            />
+            <TournamentCard
+              tag="El dickson"
+              title="Realengo Legends"
+              description="Resultados oficiales del Realengo Legends."
+              image={top02}
+            />
+            <TournamentCard
+              tag="El dickson"
+              title="Sanctum VR Tournament #2"
+              description="Resultados oficiales de Sanctum VR Tournament #2."
+              image={top03}
+            />
           </div>
         )}
       </main>
