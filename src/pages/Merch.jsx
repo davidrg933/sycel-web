@@ -2,26 +2,28 @@ import React from "react";
 import logo from "../assets/logoSycel.png";
 import "./Merch.css";
 import equipacion from "../assets/sycelEquipacion.png";
+import camiseta from "../assets/camisetaSycel.png";
+import alfombrilla from "../assets/alfombrillaSycel.png";
 
 const Merch = () => {
   const products = [
     {
       id: 1,
-      name: "??????????",
+      name: "Alfombrilla Sycel",
       price: "???€",
       status: "PRÓXIMAMENTE",
-      img: equipacion,
+      img: alfombrilla,
     },
     {
       id: 2,
-      name: "??????????",
+      name: "Camiseta Sycel",
       price: "???€",
       status: "PRÓXIMAMENTE",
-      img: equipacion,
+      img: camiseta,
     },
     {
       id: 3,
-      name: "??????????",
+      name: "Equipación Sycel",
       price: "???€",
       status: "PRÓXIMAMENTE",
       img: equipacion,
