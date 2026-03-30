@@ -17,15 +17,15 @@ const Merch = () => {
     {
       id: 2,
       name: "Camiseta Sycel",
-      price: "???€",
-      status: "PRÓXIMAMENTE",
+      price: "19,95€ + envío",
+      status: "DISPONIBLE",
       img: camiseta,
     },
     {
       id: 3,
       name: "Equipación Sycel",
-      price: "???€",
-      status: "PRÓXIMAMENTE",
+      price: "24,95€ + envío",
+      status: "DISPONIBLE",
       img: equipacion,
     },
   ];
@@ -53,12 +53,14 @@ const Merch = () => {
               <div className="product-info">
                 <h3 className="product-name">{product.name}</h3>
                 <p className="product-price">{product.price}</p>
-                <button
+                <a
+                  href="https://forms.gle/uMJNBc54cX54G8US9"
+                  target="_blank"
                   className={`buy-button ${product.status !== "DISPONIBLE" ? "disabled" : ""}`}
                   disabled={product.status !== "DISPONIBLE"}
                 >
                   {(product.status = "COMPRAR")}
-                </button>
+                </a>
               </div>
             </div>
           ))}
