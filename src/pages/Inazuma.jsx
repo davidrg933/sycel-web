@@ -8,6 +8,7 @@ import hospitalet from "../assets/hospitalet.png";
 import katawanInazuma from "../assets/katawanInazuma.png";
 import dickson from "../assets/dickson.png";
 import blasco from "../assets/blasco.png";
+import lexo from "../assets/lexoInazuma.png";
 import top01 from "../assets/topsInazuma/01top.png";
 import top02 from "../assets/topsInazuma/02top.png";
 import top03 from "../assets/topsInazuma/03top.jpg";
@@ -46,6 +47,7 @@ const Inazuma = () => {
             <PlayerCard name="Hospitalet" role="Player" image={hospitalet} />
             <PlayerCard name="Blasco" role="Player" image={blasco} />
             <PlayerCard name="Dickson" role="Player" image={dickson} />
+            <PlayerCard name="Lexo" role="Player" image={lexo} />
           </div>
         )}
 
